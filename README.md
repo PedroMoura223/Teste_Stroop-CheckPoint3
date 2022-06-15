@@ -9,13 +9,9 @@ Mapeamento de Funcionalidades:
 | --------------------- | --------- | ----------- |
 | RF002/Iniciar a sessão| O aluno/professor precisa clicar no botão "Entrar" para ter acesso a aplicação. | Home.html (linha 30) <br> Home.css (linhas 55 a 69) |
 | RF003/Cadastrar S.E.  | O aluno/professor precisa colocar os dados do Sujeito experimental | Cadastro.html (Da linha 38 a 175) <br> Cadastro.css |   
+| RF004/Ver Info. na escolha de grupos | O aluno/professor precisa acessar o botão info para ver informações sobre a escolha do grupo. | Cadastro.html (Linha 38  a 49) |  
 
 
-Cadastro.html (A partir da linha 88)
-Neste trecho se econtra a estrutura do formulário, mas é a partir da linha 88 que se inicia o algorítimo de validação de campos e captura de dados para o inicio da sessão.
-
-RF003 - Cadastrar S.E. - Cadastro.html (Da linha 38 a 175) 
-Neste intervalo existe de maneira geral, toda a estrutura do formulário, validação de campos e paginação.
 
 RF004 - Ver Info. na escolha de grupos - Cadastro.html (Linha 38  a 49)
 Neste ponto existe a estrutura do popUp, infomando os grupos esperimentais, existe também os comandos para habilitar e desabilitar este popUp.

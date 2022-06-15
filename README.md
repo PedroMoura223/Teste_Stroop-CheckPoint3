@@ -9,11 +9,9 @@ Mapeamento de Funcionalidades:
 | --------------------- | --------- | ----------- |
 | RF002/Iniciar a sessão| O aluno/professor precisa clicar no botão "Entrar" para ter acesso a aplicação. | Home.html (linha 30) <br> Home.css (linhas 55 a 69) |
 | RF003/Cadastrar S.E.  | O aluno/professor precisa colocar os dados do Sujeito experimental | Cadastro.html (Da linha 38 a 175) <br> Cadastro.css |   
-| RF004/Ver Info. na escolha de grupos | O aluno/professor precisa acessar o botão info para ver informações sobre a escolha do grupo. | Cadastro.html (Linha 38  a 49) |  
+| RF004/Ver Info na escolha de grupos | O aluno/professor pode acessar o botão info para ver informações sobre a escolha do grupo. | Cadastro.html (Linha 38  a 49) |  
+| RF005/Escolher grupo | O alunoprofessor precisa escolher um grupo para poder prosseguir na aplicação | Cadastro.html - (Linha 164 a 181)  |
 
-
-RF005 - Escolher grupo - Cadastro.html - (Linha 164 a 181) 
-Neste trecho do código existe a estrutura radio para a seleção do grupo e o salvamento temporário da escolha utilizando a função localStorage(), a mesma será acessada em outras páginas do projeto enquanto a aplicação estiver aberta.
 
 RF006 - Iniciar teste - manu.html - (Linha 43)
 Neste ponto o usuário pode clicar no elemento button para iniciar o teste, pelo falo de outros requisitos estarem finalizados, o requisito inicar o teste se considera feito.

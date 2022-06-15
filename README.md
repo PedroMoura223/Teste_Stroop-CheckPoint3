@@ -5,6 +5,9 @@ Versão da aplicação teste Stroop, atendendo aos requerimentos do Checkpoint 3
 
 Mapeamento de Funcionalidades:
 
+| Código/Funcionalidade | Descrição | Codificação |
+| --------------------- | --------- | ----------- |
+
 RF002 - Iniciar a sessão - Cadastro.html (A partir da linha 88)
 Neste trecho se econtra a estrutura do formulário, mas é a partir da linha 88 que se inicia o algorítimo de validação de campos e captura de dados para o inicio da sessão.
 

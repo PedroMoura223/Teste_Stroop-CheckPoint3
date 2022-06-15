@@ -1,6 +1,6 @@
 ## :computer: Projeto
 
-O Teste Stroop como aplicação web têm como objetivo, facilitar na administração do Teste Stroop realizado no Departamento de Psicologia da UFC pela Professora Daniely Tatmatsu, a disciplina de Análise Experimental do Comportamento (AEC), obrigatória do 4° semestre do curso de Psicologia da UFC., que até então era executada por folhas de papel. O projeto foi desenvolvido durante a disciplina de Projeto Integrado I no semestre 2022.1 pela equipe SMD FORCE, formada por <a href="#">Guilherme Cavalcante Pires de Castro Studart</a>, <a href="#">Francisco Thales Rodrigues Andrade</a>, <a href="#">Edvando Ferreira Guilherme</a>, <a href="#">Jonathan Oliveira Silva</a> e <a href="#">Pedro Augusto Sousa Moura</a>.
+O Teste Stroop como aplicação web têm como objetivo, facilitar na administração do Teste Stroop realizado no Departamento de Psicologia da UFC pela Professora Daniely Tatmatsu, a disciplina de Análise Experimental do Comportamento (AEC), obrigatória do 4° semestre do curso de Psicologia da UFC, que até então era executada em folhas de papel. O projeto foi desenvolvido durante a disciplina de Projeto Integrado I no semestre 2022.1 pela equipe SMD FORCE, formada por <a href="#">Guilherme Cavalcante Pires de Castro Studart</a>, <a href="#">Francisco Thales Rodrigues Andrade</a>, <a href="#">Edvando Ferreira Guilherme</a>, <a href="#">Jonathan Oliveira Silva</a> e <a href="#">Pedro Augusto Sousa Moura</a>.
 
 
 ## :pushpin: Requisitos funcionais

@@ -7,8 +7,10 @@ Mapeamento de Funcionalidades:
 
 | Código/Funcionalidade | Descrição | Codificação |
 | --------------------- | --------- | ----------- |
+|RF002/Iniciar a sessão | O aluno/professor precisa clicar no botão "Entrar" para ter acesso a aplicação. | Home.html (linha 30) Home.css (linhas 55 a 69) |           
 
-RF002 - Iniciar a sessão - Cadastro.html (A partir da linha 88)
+
+Cadastro.html (A partir da linha 88)
 Neste trecho se econtra a estrutura do formulário, mas é a partir da linha 88 que se inicia o algorítimo de validação de campos e captura de dados para o inicio da sessão.
 
 RF003 - Cadastrar S.E. - Cadastro.html (Da linha 38 a 175) 

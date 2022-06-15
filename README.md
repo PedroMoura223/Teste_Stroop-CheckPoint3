@@ -12,10 +12,6 @@ Mapeamento de Funcionalidades:
 | RF004/Ver Info. na escolha de grupos | O aluno/professor precisa acessar o botão info para ver informações sobre a escolha do grupo. | Cadastro.html (Linha 38  a 49) |  
 
 
-
-RF004 - Ver Info. na escolha de grupos - Cadastro.html (Linha 38  a 49)
-Neste ponto existe a estrutura do popUp, infomando os grupos esperimentais, existe também os comandos para habilitar e desabilitar este popUp.
-
 RF005 - Escolher grupo - Cadastro.html - (Linha 164 a 181) 
 Neste trecho do código existe a estrutura radio para a seleção do grupo e o salvamento temporário da escolha utilizando a função localStorage(), a mesma será acessada em outras páginas do projeto enquanto a aplicação estiver aberta.
 

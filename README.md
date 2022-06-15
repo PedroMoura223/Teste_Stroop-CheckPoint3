@@ -1,4 +1,6 @@
-# Teste_Stroop-CheckPoint3
+## :computer: Projeto
+
+## :pushpin: Requisitos funcionais
 Versão da aplicação teste Stroop, atendendo aos requerimentos do Checkpoint 3
 
 

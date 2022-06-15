@@ -7,7 +7,7 @@ Mapeamento de Funcionalidades:
 
 | Código/Funcionalidade | Descrição | Codificação |
 | --------------------- | --------- | ----------- |
-| RF002/Iniciar a sessão| O aluno/professor precisa clicar no botão "Entrar" para ter acesso a aplicação. | Home.html (linha 30) <br> Home.css (linhas 55 a 69) |      | RF003/Cadastrar S.E.  | |    
+| RF002/Iniciar a sessão| O aluno/professor precisa clicar no botão "Entrar" para ter acesso a aplicação. | Home.html (linha 30) <br> Home.css (linhas 55 a 69) |      | RF003/Cadastrar S.E.  | O aluno/professor precisa colocar os dados do Sujeito experimental | Cadastro.html (Da linha 38 a 175) <br> Cadastro.css |   
 
 
 Cadastro.html (A partir da linha 88)

@@ -2,19 +2,6 @@
 
 O Teste Stroop como aplicação web têm como objetivo, facilitar na administração do Teste Stroop tradicional, que até então era executada por folhas de papéis. O projeto foi desenvolvido durante a disciplina de Projeto Integrado I no semestre 2022.1 pela equipe SMD FORCE, formada por <a href="#">Guilherme Cavalcante Pires de Castro Studart</a>, <a href="#">Francisco Thales Rodrigues Andrade</a>, <a href="#">Edvando Ferreira Guilherme</a>, <a href="#">Jonathan Oliveira Silva</a> e <a href="#">Pedro Augusto Sousa Moura</a>.
 
-O projeto do Teste Stroop como aplicação web tem como cliente a professora Daniely Tatmatsu do
-Departamento de Psicologia da Universidade Federal do Ceará. O interesse pela aplicação digital veio
-decorrente da dificuldade em administrar o teste Stroop, que por ser feito no papel
-dificultava o acompanhamento e posterior análise das respostas, além de encarecer
-a aplicação do teste.
-Os aspectos apontados como essenciais pela cliente, para um melhor funcionamento
-do teste, foram a cronometragem do tempo, intervalo de tempo entre os testes,
-contagem de erros e explicação para os sujeitos experimentais de como irá funcionar
-o teste.
-Dessa forma, o intuito deste trabalho é criar uma aplicação digital visando facilitar a
-aplicação do teste Stroop para os alunos de Psicologia da Universidade Federal do
-Ceará, para que sua aplicação seja mais rápida e menos cansativa, e haja uma
-melhor visualização dos dados obtidos ao final do teste.
 
 ## :pushpin: Requisitos funcionais
 Versão da aplicação teste Stroop, atendendo aos requerimentos do Checkpoint 3

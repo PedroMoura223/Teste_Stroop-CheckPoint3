@@ -31,7 +31,7 @@ color: white;
 
 body {
 
-background-color: #FFF8C2;
+background-color: #E0E0E0;
 
 }
 
@@ -59,7 +59,7 @@ header {
 
 ::placeholder{
 
-  color: #2C2C2C;
+  color: #000000;
 
 }
 
@@ -110,10 +110,11 @@ text-align: center;
       
 .inputform{
 
-background-color: #C5C5C5;
+background-color: #white;
 margin-left: 2%;
 width: 96%;
 border-style: solid;
+border: none;
 border-radius: 4px;
 font-family: 'Montserrat R';
 text-indent: left 15%;
@@ -194,6 +195,11 @@ margin-top: 5%;
 
 }
 
+.size{
+width: 30px;
+height: 35px;  
+}
+
  #botao{
 
 font-family: 'Montserrat M';
@@ -207,7 +213,7 @@ margin-top: 10%;
 margin-left: 35%;
 text-align: center;
 border-radius: 7px;
-background-color: #6F6F6F;
+background-color: #414141;
 
   }
 

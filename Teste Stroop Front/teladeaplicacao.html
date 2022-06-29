@@ -1,4 +1,4 @@
-t<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -74,9 +74,6 @@ t<!DOCTYPE html>
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     click++;
-  
-
-  
 
   ctx.beginPath();
   ctx.font="30px Helvetica ";
@@ -91,9 +88,7 @@ t<!DOCTYPE html>
 
    acertos++
 
-  }else{
-    erros++
-  }
+  
    
    console.log("Escolhido" + botao + " Certo: " + pnc1cor[click])
    console.log("Erros: " + erros + " Acertos: " + acertos)
@@ -255,6 +250,9 @@ for (let i = list.length; i;) {
 
 }
 
+}else{
+    erros++
+  }
 
   
 }

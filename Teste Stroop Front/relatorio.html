@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Relatório</title>
+	<link rel="stylesheet" type="text/css" href="css/stylerelatorio.css">
+</head>
+
+<body>
+
+<header>
+
+<!--LogoMarca a Esquerda -->
+    <img src="imagens/Logo_Stroop.svg" id="logotipo">
+
+<!--Título Centralizado -->
+     <h1 style="display: flex; margin-top: -14%; margin-left: 35%; color: white; font-family: 'Montserrat', sans-serif; font-size: 170%;">Relatório</h1>
+
+<!--Ícone Home a Direita -->
+    <a href="home.html"><img src="imagens/home.png" style="margin-top: -22%; margin-left: 80%; " id="home"></a>
+
+</header>
+
+
+<script type="text/javascript">
+  
+  $("#document").ready(function(){
+
+    $('#tempo').html(localStorage.getItem('tempogasto'));
+    $('#acertos').html(localStorage.getItem('acertos'));
+    $('#erros').html(localStorage.getItem('erros'));
+    $('#inicio').html(localStorage.getItem('inicio'));
+    $('#fim').html(localStorage.getItem('fim'));
+    $('#taxa').html(localStorage.getItem('taxa'));
+
+  console.log(localStorage.getItem('tempogasto'))
+
+  })
+
+  
+
+
+</script>
+
+<fieldset>
+
+  <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Acertos Totais -------------- </h4>  <h4 id="acertos" style=" display: inline-block;">42</h4>
+   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Erros Totais ----------------- </h4>  <h4 id="erros" style=" display: inline-block;">42</h4>
+   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Tempo Gasto ------------- </h4>  <h4 id="tempo" style=" display: inline-block;">42</h4>
+   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Início -------------- </h4>  <h4 id="inicio" style=" display: inline-block;">42:98:89</h4>
+   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Fim ---------------- </h4>  <h4 id="fim" style=" display: inline-block;">42:98:89</h4>
+   
+
+
+
+ </fieldset>
+  </fieldset>
+
+  <h4 id="tempodeintervalo">Salvar Tabela:</h4> 
+<h5 id="informacoes">Salve a tabela com informações detalhadas em seu<br> dipositivo ou vizualize as informações<br> em um gráfico:</h5> 
+
+ 
+ 
+ 	<button class="btn btn-secondary" id="botao">Baixar Tabela</button>
+    <button class="btn btn-secondary" id="botao"><a href="grafico.html">Ir Para o Gráfico</a></button>
+ 	
+
+  
+ 
+</body>
+</html>

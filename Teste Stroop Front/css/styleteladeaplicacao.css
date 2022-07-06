@@ -1,9 +1,3 @@
-@font-face {
-  src:  url(fonts/static/Montserrat-SemiBold.ttf);
-  font-family: 'Montserrat SB';
-  font-weight: normal;
-}
-
 a {
 
 color: white;
@@ -24,12 +18,10 @@ background-color: #E0E0E0;
 
 header {
 
-  background-color: #2C2C2C;
+  background-color: #757575;
   height: 86px;
 
 }
-
-
 
 #logotipo{
 
@@ -62,12 +54,5 @@ align-items: center;
 margin-top: 2%;
 margin-left: 11%;
 text-align: center;
-
-}
-
-#linha2{
-
-border-color: none;
-margin-top: 38px;
 
 }

@@ -1,136 +1,148 @@
-@font-face {
-  src:  url(fonts/static/Montserrat-Medium.ttf);
-  font-family: 'Montserrat M';
-  font-weight: normal;
-}
+<!DOCTYPE html>
+<html>
+<head>
 
-@font-face {
-  src:  url(fonts/static/Montserrat-Regular.ttf);
-  font-family: 'Montserrat R';
-  font-weight: normal;
-}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-a {
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
 
-color: white;
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
 
-}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gráfico</title>
+	<link rel="stylesheet" type="text/css" href="css/stylegrafico.css">
+</head>
 
-a:hover {
+<!--- -------------------------------------- Gráfico Pizza ----------------------------------------------->
 
-color: white;
-  
-}
+<script type="text/javascript">
+    
+	
+	var i = localStorage.getItem('acertos');
+	var p =  localStorage.getItem('erros');
 
-body {
+	console.log("Erros: " +  p + " Acertos: " + i   )
+    
 
-background-color: #E0E0E0;
+	
+	google.charts.load("current", {packages:["corechart"]});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+	  var data = google.visualization.arrayToDataTable([
+		['Task', 'Hours per Day'],
+		['Acertos',   parseFloat(i)],
+		['Erros',     parseFloat(p)]
+		
+	  ]);
 
-}
+	  var options = {
+		title: 'Resumo',
+		is3D: true,
+		backgroundColor: 'E0E0E0',
+		fontSize: 11,
+		
+	
+	  };
 
-header {
+	  var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+	  chart.draw(data, options);
+	}
+  </script>
 
-  background-color: #757575;
-  height: 86px;
+<!--- -------------------------------------- Gráfico Barra ----------------------------------------------->
 
-}
+  <script>
+	 
+	 var tempo =  localStorage.getItem('tempogasto');
 
-#logotipo{
+	 google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Tempo", "TempoFeitoPeloSujeito", { role: "style" } ],
+        ["Tempo Total Gasto", parseFloat(tempo), "#b87333"],
+        ["Tempo Entre Cada Resposta", 10.49, "blue"]
+        
+      ]);
 
-  margin-top: 1.8%;
-  margin-left: 3%;
-  width: 20%;
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
 
-}      
-
-#cadastro{
-
-width: 40%;
-height: 28px;
-align-items: center;
-margin-top: 5%;
-margin-left: 8%;
-text-align: center;
-border-style: solid;
-border-radius: 4px;
-padding: 1.7%;
-font-size: 80%;
-font-style: bold;
-
-} 
-
-#home{
-
-width: 9%;
-align-items: center;
-margin-top: 2%;
-margin-left: 11%;
-text-align: center;
-
-}
-
-fieldset {
-
-border: 1.5px solid #000000;
-padding: 10px;
-
-/* controla a distancia entre os elementos e a borda */
-margin: 15px;
-margin-right: 5%;
-margin-left: 5%;
-margin-top: 8%;
-  
-/* margem para alinhar o fieldset com o restante do grid */
-border-radius: 5px;
-
-}
-      
- #botao{
-
-font-family: 'Montserrat M';
-width: 32%;
-height: 55px;
-margin-top: 8%;
-margin-left: 12%;
-text-align: center;
-border-radius: 20px;
-padding: 1.3%;
-background-color: #414141;
-line-height: 20px;
-
+      var options = {
+        title: "Gráfico de Tempo" ,
+        width: 320,
+        height: 300,
+        bar: {groupWidth: "95%"},
+		backgroundColor: "none",
+		fontSize: 12,
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
   }
 
-#tempodeintervalo{
-  margin-top: 9%;
-  font-family: 'Montserrat M';
+  </script>
 
-  font-size: 19px;
-  line-height: 23px;
-  text-align: center;
-  font-weight: bold;
-}
+  <!--- -------------------------------------- Gráfico Barra ----------------------------------------------->
 
-#informacoes{
-  margin-top: 1%;
-  font-family: 'Montserrat R';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-}
+<body>
 
-h5#informacoes {
-  align-items: center;
-  font-size: 13px;
-}
+<header>
 
-#relatorio{
-  font-size: 20px;
-  margin-top: 5%;
-  margin-bottom: 4%;
- text-align: center;
+<!--LogoMarca a Esquerda -->
+    <img src="imagens/Logo_Stroop.svg" id="logotipo">
 
-}
+<!--Título Centralizado -->
+     <h1 class="titulo"style="font-family: 'Montserrat Bold', sans-serif; ">Relatório</h1>
+
+<!--Ícone Home a Direita -->
+    <a href="home.html"><img src=" imagens/home.png" style="margin-top: -19%; margin-left: 87%; " id="home"></a>
+
+</header>
 
 
+<!--Bloco que Engloba o Formulário-->   
 
+<h4 id="tempodeintervalo">Gráfico de relatório</h4> 
+<h4 id="informacoes" style=" font-family: 'Montserrat', sans-serif;">Informações avançadas:</h4> 
+
+<fieldset style="overflow: scroll; width: 325px; height: 350px;">
+
+	<!--Gráfico de pizza-->  
+	<div id="piechart_3d" style="width: 300px; height: 500px; border-radius: 20px; margin-left: auto;
+    margin-right: auto; "></div>
+
+	<div id="columnchart_values" style="width: 300px; height: 500px; border-radius: 20px; margin-top: -40%; margin-left: auto;
+    margin-right: auto; "></div>
+
+
+	
+
+
+ </fieldset>
+  </fieldset>
+
+  <h4 id="tempodeintervalo" style="margin-top: 5%;">Salvar gráfico:</h4> 
+<h5 id="informacoes" style=" font-family: 'Montserrat Bold', sans-serif;">Salve o gráfico com informações simplificadas em seu<br> dipositivo ou vizualize as informações<br> em uma tabela:</h5> 
+
+ 
+<div style="margin-bottom: 10%;">
+ 	<button class="btn btn-secondary" id="botao" style=" font-family: 'Montserrat Bold', sans-serif;">Baixar gráfico</button>
+  <a href="relatorio.html"><button class="btn btn-secondary" id="botao" style=" font-family: 'Montserrat Bold', sans-serif;">Ir para a tabela</button></a>
+</div>
+	
+ 
+</body>
+</html>

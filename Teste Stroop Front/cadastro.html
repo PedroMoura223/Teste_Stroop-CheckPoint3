@@ -25,10 +25,10 @@
     <img src="imagens/Logo_Stroop.svg" id="logotipo">
 
 <!--Título Centralizado -->
-    <h1 style="display: flex; margin-top: -13%; margin-left: 38%; color: white; font-family: 'Montserrat Bold', sans-serif; font-size: 170%;">Cadastro</h1>
+    <h1 class="titulo" style=" font-family: 'Montserrat Bold', sans-serif;">Cadastro</h1>
 
 <!--Ícone Home a Direita -->
-    <a href="home.html"><img src="imagens/home.png" style="margin-top: -24%; margin-left: 86%; " id="home"></a>
+    <a href="home.html"><img src="imagens/home.png" style="margin-top: -19%; margin-left: 87%; " id="home"></a>
 
 </header>
 
@@ -52,21 +52,23 @@
 <!--Bloco que Engloba o Formulário-->    
 <fieldset>
 
-  	<p class="insira">Insira os Dados do Sujeito Experimental</p>
+  	<h4 id="tempodeintervalo" style="margin-bottom: 7%;">Insira os dados do sujeito experimental</h4>
 
 
 <form>
 	<!--Inputs-->  
-  	<input class="inputform" type="text" id="nome" placeholder="Digite Seu Nome"><br><br>
-  	<input class="inputform" type="text" id="sobrenome" placeholder="Digite Seu Sobrenome"><br><br>
-  	<input class="inputform" type="text" id="idade" placeholder="Digite Sua Idade"><br><br>
+  	<input class="inputform" type="text" id="nome" placeholder="Digite seu nome"><br><br>
+  	<input class="inputform" type="text" id="sobrenome" placeholder="Digite seu sobrenome"><br><br>
+  	<input class="inputform" type="text" id="idade" placeholder="Digite sua idade"><br><br>
 
    	<!--Parágrafos-->  
-  	<p class="grupo">Grupo de Aplicação</p>
+  	<p id="tempodeintervalo" style="margin-top: 3%;">Grupo de aplicação</p>
 
 
     
-  	<p class="selecione">Selecione:</p> <img style="width: 10%; margin-top: -25%; margin-left: 88%;" src="imagens/inter.png" onclick="
+  	<p id="informacoes" style="margin-right: 60%; margin-top: 5%;">Selecione:</p> 
+
+    <img style="width: 10%; margin-top: -25%; margin-left: 88%;" src="imagens/inter.png" onclick="
 
 
 
@@ -189,7 +191,7 @@
  
  
  	<!-- <button class="btn btn-secondary" id="botao" onclick="salvarDados()"><a href="menu.html">Continuar</a></button>-->
-    <a href="menu.html"><button class="btn btn-secondary" id="botao" onclick="salvarDados()">Continuar</button></a>
+    <a href="menu.html"><button class="btn btn-secondary" id="botao" onclick="salvarDados()" style="font-family: 'Montserrat Bold', sans-serif; margin-left: 35%; margin-bottom: 10%;">Continuar</button></a>
 
 
 <script type="text/javascript">

@@ -26,10 +26,10 @@
     <img src="imagens/Logo_Stroop.svg" id="logotipo">
 
 <!--Título Centralizado -->
-     <h1 style="display: flex; margin-top: -13%; margin-left: 35%; color: white; font-family: 'Montserrat Bold', sans-serif; font-size: 170%;">Relatório</h1>
+     <h1 class="titulo" style="font-family: 'Montserrat Bold', sans-serif;">Relatório</h1>
 
 <!--Ícone Home a Direita -->
-    <a href="home.html"><img src="imagens/home.png" style="margin-top: -24%; margin-left: 86%; " id="home"></a>
+    <a href="home.html"><img src="imagens/home.png" style="margin-top: -19%; margin-left: 87%; " id="home"></a>
 
 </header>
 
@@ -54,13 +54,18 @@
 
 </script>
 
+<h4 id="tempodeintervalo">Gráfico de relatório</h4> 
+<h4 id="informacoes" style=" font-family: 'Montserrat', sans-serif;">Informações avançadas:</h4> 
+
 <fieldset>
 
-  <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Acertos Totais -------------- </h4>  <h4 id="acertos" style=" display: inline-block;">42</h4>
-   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Erros Totais ----------------- </h4>  <h4 id="erros" style=" display: inline-block;">42</h4>
-   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Tempo Gasto ------------- </h4>  <h4 id="tempo" style=" display: inline-block;">42</h4>
-   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Início -------------- </h4>  <h4 id="inicio" style=" display: inline-block;">42:98:89</h4>
-   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Fim ---------------- </h4>  <h4 id="fim" style=" display: inline-block;">42:98:89</h4>
+  <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Acertos totais <span>-----------------------</span> </h4>  
+   <h4 id="acertos" style=" display: inline-block;">42</h4>
+
+   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Erros totais <span>--------------------------</span> </h4>  <h4 id="erros" style=" display: inline-block;">42</h4>
+   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Tempo gasto <span>----------------------</span> </h4>  <h4 id="tempo" style=" display: inline-block;">42</h4>
+   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Início <span>----------------------</span> </h4>  <h4 id="inicio" style=" display: inline-block;">42:98:89</h4>
+   <h4 id="relatorio" style="display: inline-block; margin-left: 7%;">Fim <span>------------------------</span> </h4>  <h4 id="fim" style=" display: inline-block;">42:98:89</h4>
    
 
 
@@ -68,15 +73,12 @@
  </fieldset>
   </fieldset>
 
-  <h4 id="tempodeintervalo">Salvar Tabela:</h4> 
-<h5 id="informacoes">Salve a tabela com informações detalhadas em seu<br> dipositivo ou vizualize as informações<br> em um gráfico:</h5> 
+  <h4 id="tempodeintervalo" style="margin-top: 5%;">Salvar Tabela:</h4> 
+<h5 id="informacoes" style=" font-family: 'Montserrat Bold', sans-serif;">Salve a tabela com informações detalhadas em seu<br> dipositivo ou vizualize as informações<br> em um gráfico:</h5> 
 
+ <button class="btn btn-secondary" id="botao" style=" font-family: 'Montserrat Bold', sans-serif; margin-left: 5%;">Baixar tabela</button>
+  <a href="grafico.html"><button class="btn btn-secondary" id="botao" style=" font-family: 'Montserrat Bold', sans-serif; margin-left: 25%;">Ir para o Gráfico</button></a>
  
- 
- 	<button class="btn btn-secondary" id="botao">Baixar <br>Tabela</button>
-    <button class="btn btn-secondary" id="botao"><a href="grafico.html">Ir Para o Gráfico</a></button>
- 	
-
   
  
 </body>

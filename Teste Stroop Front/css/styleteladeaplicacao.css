@@ -31,25 +31,22 @@ header {
 
 }      
 
-#cadastro{
+.titulo {
 
-width: 40%;
-height: 28px;
-align-items: center;
-margin-top: 5%;
-margin-left: 8%;
-text-align: center;
-border-style: solid;
-border-radius: 4px;
-padding: 1.7%;
-font-size: 80%;
-font-style: bold;
-
-} 
+  width: 140px;
+  height: 23px;
+  margin-top: -13%; 
+  margin-left: 34%; 
+  color: white; 
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
 
 #home{
 
-width: 9%;
+width: 8%;
 align-items: center;
 margin-top: 2%;
 margin-left: 11%;

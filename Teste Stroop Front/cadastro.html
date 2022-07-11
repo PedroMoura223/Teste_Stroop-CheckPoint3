@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <link rel="icon" type="image/icon" href="imagens/Logo_Stroop.ico">
      
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -19,248 +21,259 @@
 
 <body>
 
-<header>
+    <header>
 
-<!--LogoMarca a Esquerda -->
-    <img src="imagens/Logo_Stroop.svg" id="logotipo">
-
-<!--Título Centralizado -->
-    <h1 class="titulo" style=" font-family: 'Montserrat Bold', sans-serif;">Cadastro</h1>
-
-<!--Ícone Home a Direita -->
-    <a href="home.html"><img src="imagens/home.png" style="margin-top: -19%; margin-left: 87%; " id="home"></a>
-
-</header>
-
-
-<!--  -->
-
-    <fieldset id="grupo" style="position: fixed; overflow: scroll;border-style: bold; width: 90%; height: 40%; background-color: white; margin-top: 20%; border: 1.5px solid #000000; ">
-       
-    <img src="imagens/fechar.png" style="width: 10%; margin-top: 1%; margin-left: 90%; padding-bottom: 5px" onclick="$('#grupo').hide();">
-    
-   
-    <p class="group" ><b>Grupo I -</b> AST-1; NCC-1; AST-2; NCC-2; PAUSA; NCC-1; PNC-1; NCC-2; PNC-2.</p>
-    <p class="group" ><b>Grupo II -</b> NCC-1; AST-1; NCC-2; AST-2; PAUSA; PNC-1; NCC-1;PNC-2; NCC-2.</p>
-    <p class="group" ><b>Grupo III -</b> PNC-1; NCC-1; PNC-2; NCC-2; PAUSA; NCC-1; AST-1;NCC-2; AST-2.</p>
-    <p class="group" ><b>Grupo IV -</b> NCC-1; PNC-1; NCC-2; PNC-2; PAUSA; AST-1; NCC-1;AST-2; NCC-2.</p>
-    
-
-    </fieldset>
-
-
-<!--Bloco que Engloba o Formulário-->    
-<fieldset>
-
-  	<h4 id="tempodeintervalo" style="margin-bottom: 7%;">Insira os dados do sujeito experimental</h4>
-
-
-<form>
-	<!--Inputs-->  
-  	<input class="inputform" type="text" id="nome" placeholder="Digite seu nome"><br><br>
-  	<input class="inputform" type="text" id="sobrenome" placeholder="Digite seu sobrenome"><br><br>
-  	<input class="inputform" type="text" id="idade" placeholder="Digite sua idade"><br><br>
-
-   	<!--Parágrafos-->  
-  	<p id="tempodeintervalo" style="margin-top: 3%;">Grupo de aplicação</p>
-
-
-    
-  	<p id="informacoes" style="margin-right: 60%; margin-top: 5%;">Selecione:</p> 
-
-    <img style="width: 10%; margin-top: -25%; margin-left: 88%;" src="imagens/inter.png" onclick="
-
-
-
-      $('#grupo').show();
-
-
-
-    ">
-    
-
- <script type="text/javascript">
-     
-  $('#grupo').hide();
-
- </script>
-
- <script type="text/javascript">
-    
-    function salvarDados(){
-
-         var sujeito = new Object();
-         
-         var erros = [];
-
-
-
-         var nome = $("#nome").val();
+        <!--LogoMarca a Esquerda -->
+            <img src="imagens/Logo_Stroop.svg" id="logotipo">
         
-         var sobrenome = $("#sobrenome").val();      
+        <!--Título Centralizado -->
+            <h1 class="titulo" style=" font-family: 'Montserrat Bold', sans-serif;">Cadastro</h1>
         
-         var idade = $("#idade").val();
+        <!--Ícone Home a Direita -->
+            <a href="home.html"><img src="imagens/home.png" style="margin-top: -19%; margin-left: 87%; " id="home"></a>
+        
+        </header>
+        
+        
+        <!--  -->
+        
+            <fieldset id="grupo" style="position: fixed; overflow: scroll; border-style: bold; width: 90%; height:48%; background-color: white; margin-top: 20%; border: 1.5px solid #000000; ">
+               
+            <img src="imagens/fechar.png" style="width: 10%; margin-top: 1%; margin-left: 90%; padding-bottom: 5px" onclick="$('#grupo').hide();">
+            
+            <p class="group" ><b>Grupo I -</b> AST-1; NCC-1; AST-2; NCC-2; PAUSA; NCC-1; PNC-1; NCC-2; PNC-2.</p>
+            <p class="group" ><b>Grupo II -</b> NCC-1; AST-1; NCC-2; AST-2; PAUSA; PNC-1; NCC-1;PNC-2; NCC-2.</p>
+            <p class="group" ><b>Grupo III -</b> PNC-1; NCC-1; PNC-2; NCC-2; PAUSA; NCC-1; AST-1;NCC-2; AST-2.</p>
+            <p class="group" ><b>Grupo IV -</b> NCC-1; PNC-1; NCC-2; PNC-2; PAUSA; AST-1; NCC-1;AST-2; NCC-2.</p>
+            <p class="group" ><b>PNC -</b> Palavra Neutra com Cor.</p>
+            <p class="group" ><b>PCC -</b> Palavra de Cor com Cor.</p>
+            <p class="group" ><b>AST -</b> Aterisco em Cor.</p>
+        
+        
+        
+            </fieldset>
+        
+            <fieldset id="erro"  style="position: fixed; border-style: bold; width: 90%; height: 40%; background-color: white; margin-top: 20%; border: 1.5px solid #000000; ">
+               
+                <img src="imagens/fechar.png" style="width: 10%; margin-top: 1%; margin-left: 90%; padding-bottom: 5px" onclick="$('#erro').hide();">
+                
+                <p class="group" style="margin-top: 10%;" ><b>Algum dos campos não está preenchido, Certifique-se de preencher todos os campos!</p>
+                
+                </fieldset>
+        
+        
+        <!--Bloco que Engloba o Formulário-->    
+        <fieldset>
+        
+              <h4 id="tempodeintervalo" style="margin-bottom: 7%;">Insira os dados do sujeito experimental</h4>
+        
+        
+        <form>
+            <!--Inputs-->  
+              <input class="inputform" type="text" id="nome" placeholder="Digite seu nome"><br><br>
+              <input class="inputform" type="text" id="sobrenome" placeholder="Digite seu sobrenome"><br><br>
+              <input class="inputform" type="text" id="idade" placeholder="Digite sua idade"><br><br>
+        
+               <!--Parágrafos-->  
+              <p id="tempodeintervalo" style="margin-top: 3%;">Grupo de aplicação</p>
+        
+        
+            
+              <p id="informacoes" style="margin-right: 60%; margin-top: 5%;">Selecione:</p>
 
-         
-      
-                    //Executa Loop entre todas as Radio buttons com o name de valor
-                    $('input:radio[name=valor]').each(function() {
-                        //Verifica qual está selecionado
-                        if ($(this).is(':checked'))
-                            grupo = parseInt($(this).val());
-                    })               
+               <img style="width: 10%; margin-top: -25%; margin-left: 88%;" src="imagens/inter.png" onclick="
+        
+        
+        
+              $('#grupo').show();
+        
+        
+        
+            ">
+            
+        
+         <script type="text/javascript">
+             
+          $('#grupo').hide();
+          $('#erro').hide();
+        
+         </script>
+        
+         <script type="text/javascript">
+            
+            function salvarDados(){
+        
+                 var sujeito = new Object();
                  
-           
-
-                 if (nome === "" || sobrenome === "" || idade === "" || grupo === "") {
-
-          erros[erros.length] = "Algum dos campos não está preenchido, Certifique-se de preencher todos os campos";
-
-                        
-       
-        }else{
-
-            
-
-            var nomeLimpo = nome.replace(/\s/g, '');
-            var sobrenomeLimpo = sobrenome.replace(/\s/g, '');
-            var idadeLimpo = idade.replace(/\s/g, '');
-            
-
-            sujeito.nome = nomeLimpo;
-            sujeito.sobrenome = sobrenomeLimpo;
-            sujeito.idade = idadeLimpo;
-            
-            
-            
-            localStorage.clear();  
-            
-
-            localStorage.setItem('grupo',grupo);
-            sujeito.grupo = grupo;
-
-             window.location.href = "menu.html";
-   
-        }
-
+                 var erros = [];
         
-
-        for(var i = 0; i < erros.length; i++){
-
-            alert("Erros encontrados: " + erros[i])
-
-        }
-    
-        }
-       
-
-
         
-
-</script>
-  
-
-
-
-<!--Bloco das opções-->   
-<div class="opcoes" id="grupo" >
-
-<input class="size" name="valor" type="radio" value="1" style="margin-left: 35%" /> •1
         
-         
-        <input class="size" name="valor" type="radio" value="2" style="margin-left: 10%; " /> •2
-        <br />
+                 var nome = $("#nome").val();
+                
+                 var sobrenome = $("#sobrenome").val();      
+                
+                 var idade = $("#idade").val();
         
-        <input class="size" name="valor" type="radio" value="3" style="margin-left: 35%; margin-top: 10%" /> •3
-   
-         
-        <input class="size" name="valor" type="radio" value="4" style="margin-left: 10%" /> •4
-        <br />
-         
-       
-         
-
-  </div>
-
- </form>
-
-  </fieldset>
-
-
-
- 
- 
- 	<!-- <button class="btn btn-secondary" id="botao" onclick="salvarDados()"><a href="menu.html">Continuar</a></button>-->
-    <a href="menu.html"><button class="btn btn-secondary" id="botao" onclick="salvarDados()" style="font-family: 'Montserrat Bold', sans-serif; margin-left: 35%; margin-bottom: 10%;">Continuar</button></a>
-
-
-<script type="text/javascript">
-    
-    function salvarDados(){
-
-         var sujeito = new Object();
-         
-         var erros = [];
-
-
-
-         var nome = $("#nome").val();
-        
-         var sobrenome = $("#sobrenome").val();      
-        
-         var idade = $("#idade").val();
-
-         
-      
-                    //Executa Loop entre todas as Radio buttons com o name de valor
-                    $('input:radio[name=valor]').each(function() {
-                        //Verifica qual está selecionado
-                        if ($(this).is(':checked'))
-                            grupo = parseInt($(this).val());
-                    })               
                  
+              
+                            //Executa Loop entre todas as Radio buttons com o name de valor
+                            $('input:radio[name=valor]').each(function() {
+                                //Verifica qual está selecionado
+                                if ($(this).is(':checked'))
+                                    grupo = parseInt($(this).val());
+                            })               
+                         
+                   
+        
+                         if (nome === "" || sobrenome === "" || idade === "" || grupo === "") {
+        
+                  erros[erros.length] = "Algum dos campos não está preenchido, Certifique-se de preencher todos os campos";
+        
+                                
+               
+                }else{
+        
+                    
+        
+                    var nomeLimpo = nome.replace(/\s/g, '');
+                    var sobrenomeLimpo = sobrenome.replace(/\s/g, '');
+                    var idadeLimpo = idade.replace(/\s/g, '');
+                    
+        
+                    sujeito.nome = nomeLimpo;
+                    sujeito.sobrenome = sobrenomeLimpo;
+                    sujeito.idade = idadeLimpo;
+                    
+                    
+                    
+                    localStorage.clear();  
+                    
+        
+                    localStorage.setItem('grupo',grupo);
+                    sujeito.grupo = grupo;
+        
+                     
            
-
-                 if (nome === "" || sobrenome === "" || idade === "" || grupo === "") {
-
-          erros[erros.length] = "Algum dos campos não está preenchido, Certifique-se de preencher todos os campos";
-
-                        
-       
-        }else{
-
-            alert("Validado com Sucesso");
-
-            var nomeLimpo = nome.replace(/\s/g, '');
-            var sobrenomeLimpo = sobrenome.replace(/\s/g, '');
-            var idadeLimpo = idade.replace(/\s/g, '');
+                }
+        
+                
+        
+                for(var i = 0; i < erros.length; i++){
+        
+                    alert("Erros encontrados: " + erros[i])
+        
+                }
             
-
-            sujeito.nome = nomeLimpo;
-            sujeito.sobrenome = sobrenomeLimpo;
-            sujeito.idade = idadeLimpo;
-            sujeito.grupo = grupo;
-
-            alert(sujeito.nome + " " + sujeito.sobrenome + " " +  sujeito.idade + " " + sujeito.grupo );
-   
-        }
-
+                }
+               
+        </script>
+          
+        <!--Bloco das opções-->   
+        <div class="opcoes" id="grupo" style="margin-left: -8%;" >
+          
+            <!--Desbugar validação do Radio--> 
+                <input class="size" id="grupoescolhido" hidden name="valor" type="radio" value="0" style="margin-left: 35%" />
+            <!------------------------------> 
+                <input class="size" id="grupoescolhido" name="valor" type="radio" value="1" style="margin-left: 35%" /> •1
+                
+                 
+                <input class="size" name="valor" type="radio" value="2" style="margin-left: 10%; " /> •2
+                <br />
+                
+                <input class="size" name="valor" type="radio" value="3" style="margin-left: 35%; margin-top: 10%" /> •3
+           
+                 
+                <input class="size" name="valor" type="radio" value="4" style="margin-left: 10%" /> •4
+                <br />
         
-
-        for(var i = 0; i < erros.length; i++){
-
-            alert("Erros encontrados: " + erros[i])
-
-        }
-    
-        }
-       
-
-
+          </div>
         
-
-</script>
-  
- 
+         </form>
+        
+          </fieldset>
+        
+        
+             <!-- <button class="btn btn-secondary" id="botao" onclick="salvarDados()"><a href="menu.html">Continuar</a></button>-->
+            <a href="menu.html"><button class="btn btn-secondary" id="botao" onclick="salvarDados()" style="font-family: 'Montserrat Bold', sans-serif; margin-left: 35%; margin-bottom: 10%;">Continuar</button></a>
+        
+        
+        <script type="text/javascript">
+            
+            function salvarDados(){
+        
+                 var sujeito = new Object();
+                 
+                 var erros = [];
+        
+                 var nome = $("#nome").val();
+                
+                 var sobrenome = $("#sobrenome").val();      
+                
+                 var idade = $("#idade").val();
+        
+                 var grupo = $("#grupoescolhido").val()
+        
+        
+                            //Executa Loop entre todas as Radio buttons com o name de valor
+                            $('input:radio[name=valor]').each(function() {
+                                //Verifica qual está selecionado
+                                if ($(this).is(':checked'))
+                                    grupo = parseInt($(this).val());
+                            })               
+                         
+                            localStorage.setItem('nome', nome);
+                            localStorage.setItem('sobrenome', sobrenome);
+                            localStorage.setItem('grupo', grupo);
+                            localStorage.setItem('idade', idade);
+                            localStorage.setItem('tipo', 'um');
+                   
+        
+                         if (nome === "" || sobrenome === "" || idade === "" || grupo === "0") {
+        
+                  erros[erros.length] = "Algum dos campos não está preenchido, Certifique-se de preencher todos os campos";
+        
+               
+                }else{
+        
+                   
+        
+                    var nomeLimpo = nome.replace(/\s/g, '');
+                    var sobrenomeLimpo = sobrenome.replace(/\s/g, '');
+                    var idadeLimpo = idade.replace(/\s/g, '');
+                    
+        
+                    sujeito.nome = nomeLimpo;
+                    sujeito.sobrenome = sobrenomeLimpo;
+                    sujeito.idade = idadeLimpo;
+                    sujeito.grupo = grupo;
+        
+                    
+           
+                }
+        
+                
+        
+                for(var i = 0; i < erros.length; i++){
+                   
+                    $('#erro').show();
+                    
+                   
+        
+                }
+        
+                if(erros.length == 0){
+                    window.location.href = "menu.html";
+                }
+            
+                }
+               
+        
+        
+                
+        
+        </script>
+          
+         
 </body>
 </html>

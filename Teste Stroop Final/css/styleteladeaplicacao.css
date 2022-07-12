@@ -1,0 +1,55 @@
+a {
+
+color: white;
+
+}
+
+a:hover {
+
+color: white;
+  
+}
+
+body {
+
+background-color: #E0E0E0;
+
+}
+
+header {
+
+  background-color: #757575;
+  height: 86px;
+
+}
+
+#logotipo{
+
+  margin-top: 1.8%;
+  margin-left: 3%;
+  width: 20%; 
+
+}      
+
+.titulo {
+
+  width: 140px;
+  height: 23px;
+  margin-top: -13%; 
+  margin-left: 34%; 
+  color: white; 
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+#home{
+
+width: 8%;
+align-items: center;
+margin-top: 2%;
+margin-left: 11%;
+text-align: center;
+
+}

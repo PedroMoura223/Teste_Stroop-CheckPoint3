@@ -23,7 +23,7 @@ Mapeamento de Funcionalidades:
 | RF009/Ver alternativas de respostas | Durante o Teste, o aluno/professor precisa selecionar uma das alternativas de respostas. | teladeaplicacao.html (Linhas 52 a 252)|
 | RF010/Ver tela de descanso | O aluno/professor precisa vizualizar uma tela de intervalo com um cronômetro decrescente, após ter concluído 4 folhas do teste. | descanso.html (Linhas 40 a 123) |
 | RF011/Ver tela final | O aluno/professor precisa vizualizar uma tela de conclusão após finalizar o teste.| final.html (Linhas 40 a 58) |
-| RF012/Gerar o relatório com as variáveis do teste (tempos, acertos e erros) | Após a conclusão do teste, o aluno/professor precisar ver, resumidamente, seu desempenho. | teladeaplicacao.html (Linhas 290 a 315)
+| RF012/Gerar o relatório com as variáveis do teste (tempos, acertos e erros) | Após a conclusão do teste, o aluno/professor precisar ver, resumidamente, seu desempenho. | teladeaplicacao.html (Linhas 290 a 315) e relatorio.html(Linhas 60 a 266) |
 | RF013/Ver erros e acertos totais | Neste ponto o usuário pode analisar a quantidade de erros e acertos gerais obtidos pelo mesmo na execução do teste | relatorio.html (Linhas 135 a 136) |
 | RF014/Ver erros e acertos por tipo | Neste ponto o usuário pode analisar e erros e acertos de uma maneira mais específica, desta vez por tipo de folha | relatorio.html (Linhas 137 a 140) |
 | RF015/Ver tempo total gasto | Neste ponto o usuário observa todo o tempo gasto para a realização de teste | relatorio.html (Linhas 141) |

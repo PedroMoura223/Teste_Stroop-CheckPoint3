@@ -12,15 +12,20 @@ Mapeamento de Funcionalidades:
 
 | Código/Funcionalidade | Descrição | Codificação |
 | --------------------- | --------- | ----------- |
-| RF001/Ver tutorial | O aluno/professor pode vizualizar um tutorial sobre como fazer o teste na aplicação. | tutorial.html (Da linha 39 a 49) |
-| RF002/Iniciar a sessão| O aluno/professor precisa clicar no botão "Entrar" para ter acesso a aplicação. | index.html (linha 30) |
-| RF003/Cadastrar S.E.  | O aluno/professor precisa colocar os dados do Sujeito experimental | cadastro.html (Da linha 38 a 175) |   
-| RF004/Ver Info na escolha de grupos | O aluno/professor pode acessar o botão info para ver informações sobre a escolha do grupo. | cadastro.html (Linha 38  a 49) |  
+| RF001/Ver tutorial | O aluno/professor pode vizualizar um tutorial sobre como fazer o teste na aplicação. | tutorial.html (Linhas 39 a 49) |
+| RF002/Iniciar a sessão| O aluno/professor precisa clicar no botão "Entrar" para ter acesso a aplicação. | index.html (Linha 30) |
+| RF003/Cadastrar S.E.  | O aluno/professor precisa colocar os dados do Sujeito experimental | cadastro.html (Linhas 38 a 175) |   
+| RF004/Ver Info na escolha de grupos | O aluno/professor pode acessar o botão info para ver informações sobre a escolha do grupo. | cadastro.html (Linhas 38  a 49) |  
 | RF005/Escolher grupo | O aluno/professor precisa escolher um grupo para poder prosseguir na aplicação. | cadastro.html (Linha 164 a 181)  |
 | RF006/niciar teste | O aluno/professor precisa clicar no botão "Iniciar" para começar o Teste. | menu.html (Linhas 40 a 47) |
-| RF007/Iniciar contagem | Ao iniciar o teste um contador começar a contabilizar o tempo.  | teladeaplicacao.html (Linha 230 a 252) |
-| RF008/Ver estímulo | Durante o Teste, o aluno/professor precisa ver o estímulo de cada folha | teladeaplicacao.html (Linha 52 a 252) |
-| RF009/Ver alternativas de respostas | Durante o Teste, o aluno/professor precisa selecionar uma das alternativas de respostas. | teladeaplicacao.html (Linha 52 a 252)|
-| RF010/Ver tela de descanso | O aluno/professor precisa vizualizar uma tela de intervalo com um cronômetro decrescente, após ter concluído 4 folhas do teste. | descanso.html (Da linha 40 a 123) |
-| RF011/Ver relatório de desempenho | Após a conclusão do teste, o aluno/professor precisar ver, resumidamente, seu desempenho. | relatório.html (Linha 37 a 63)
+| RF007/Iniciar contagem | Ao iniciar o teste um contador começar a contabilizar o tempo.  | teladeaplicacao.html (Linhas 230 a 252) |
+| RF008/Ver estímulo | Durante o Teste, o aluno/professor precisa ver o estímulo de cada folha | teladeaplicacao.html (Linhas 52 a 252) |
+| RF009/Ver alternativas de respostas | Durante o Teste, o aluno/professor precisa selecionar uma das alternativas de respostas. | teladeaplicacao.html (Linhas 52 a 252)|
+| RF010/Ver tela de descanso | O aluno/professor precisa vizualizar uma tela de intervalo com um cronômetro decrescente, após ter concluído 4 folhas do teste. | descanso.html (Linhas 40 a 123) |
+| RF011/Ver tela final | O aluno/professor precisa vizualizar uma tela de conclusão após finalizar o teste.| final.html (Linhas 40 a 58) |
+| RF012/Gerar relatório | Após a conclusão do teste, o aluno/professor precisar ver, resumidamente, seu desempenho. | relatório.html (Linhas 37 a 63)
+| RF013/Ver erros e acertos totais | --------- | ----------- |
+| RF014/Ver erros e acertos por tipo | --------- | ----------- |
+| RF015/Ver tempo total gasto | --------- | ----------- |
+| RF016/Ver tempo gasto por tipo | --------- | ----------- |
 | RF017/Sair da aplicação | Após iniciar a sessão, o aluno/professor pode sair da aplicação a qualquer momento ao clicar no ícone "home". | cadastro.html, gráfico.html e final.html (linha 31) <br> menu.html (linha 30) <br> tutorial.html e relatorio.html (linha 32) <br> teladeaplicação.html (linha 38) <br>  

@@ -13,7 +13,7 @@ Mapeamento de Funcionalidades:
 | Código/Funcionalidade | Descrição | Codificação |
 | --------------------- | --------- | ----------- |
 | RF001/Ver tutorial | O aluno/professor pode visualizar um tutorial sobre como fazer o teste na aplicação. | tutorial.html (Linhas 39 a 49) |
-| RF002/Iniciar a sessão| O aluno/professor precisa clicar no botão "Entrar" para ter acesso a aplicação. | index.html (Linha 30) |
+| RF002/Iniciar a sessão| O aluno/professor precisa clicar no botão "Entrar" para ter acesso a aplicação. | home.html (Linha 30) |
 | RF003/Cadastrar S.E.  | O aluno/professor precisa colocar os dados do Sujeito experimental | cadastro.html (Linhas 38 a 175) |   
 | RF004/Ver Info na escolha de grupos | O aluno/professor pode acessar o botão info para ver informações sobre a escolha do grupo. | cadastro.html (Linhas 38  a 49) |  
 | RF005/Escolher grupo | O aluno/professor precisa escolher um grupo para poder prosseguir na aplicação. | cadastro.html (Linha 164 a 181)  |

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="icon" type="image/icon" href="imagens/Logo_Stroop.ico">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+	
+
+    <script type="text/javascript" src="ordens/PNC1_-_Cores.js"></script>
+    <script type="text/javascript" src="ordens/PNC1_-_Nomes.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tela De Aplicação</title>
+	<link rel="stylesheet" type="text/css" href="css/styleteladeaplicacao.css">
+</head>
+
+<body>
+
+  <header>
+
+    <!--LogoMarca a Esquerda -->
+        <img src="imagens/Logo_Stroop.svg" id="logotipo">
+    
+    <!--Título Centralizado -->
+        <h1 class="titulo" style=" font-family: 'Montserrat Bold', sans-serif;">Folha Atual</h1>
+    
+    <!--Ícone Home a Direita -->
+        <a href="home.html"><img src="imagens/home.png" style="margin-top: -19%; margin-left: 87%; " id="home"></a>
+    
+    </header>
+    
+    
+    <!--Bloco que Engloba o Formulário-->    
+    
+    <canvas id = "meuRetangulo" 
+           style = "border: 1px solid black; width: 90%; height:230px; margin-left: 5%; margin-right: 0; margin-top: 5%; border-radius: 7px;  ">
+      O Canvas não está ativado em seu Browser
+     </canvas>
+    
+    
+    
+    
+    
+     <script type="text/javascript">
+    
+      console.log(
+        
+        
+    
+      )
+    
+      let tipo = localStorage.getItem('tipo')
+      
+      var erros = 0
+      var acertos = 0
+       
+      var bt1 = "blue"
+      var bt2 = "orange"
+      var bt3 = "green"
+      var bt4 = "red"
+    
+      var click = 0;
+      var tempogasto
+      var cro = 0
+    
+      var horainicial = new Date().toLocaleTimeString()
+      var horafinal 
+    
+      
+     if(click == 0){
+    
+    
+      
+      var canvas = document.getElementById("meuRetangulo");
+         var ctx = canvas.getContext("2d")
+    
+    //Tipo Um
+    
+    if(tipo == "um"){
+    
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        click++;
+    
+      ctx.beginPath();
+      ctx.font="30px Helvetica ";
+      ctx.fillStyle = "blue";
+      ctx.fillText("Garfo",105,80);
+    }
+    
+    
+    //Tipo Dois
+    
+    if(tipo == "dois"){
+    
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    click++;
+    
+    ctx.beginPath();
+    ctx.font="30px Helvetica ";
+    ctx.fillStyle = "blue";
+    ctx.fillText("Preto",105,80);
+    }
+    
+    
+     }
+    
+    
+      function clique(botao){
+    
+      if(botao == pnc1cor[click] ){
+    
+       acertos++
+    
+      
+       
+       console.log("Escolhido" + botao + " Certo: " + pnc1cor[click])
+       console.log("Erros: " + erros + " Acertos: " + acertos)
+    
+        $("#document").ready(function(){
+    
+          const maxNumbers = 4;
+    let list = [];
+    for (let i = 0; i < maxNumbers; i++) {
+       list[i] = i + 1;
+    }
+    
+    
+          let randomNumber;
+          let tmp;
+    for (let i = list.length; i;) {
+        randomNumber = Math.random() * i-- | 0;
+        tmp = list[randomNumber];
+        // troca o número aleatório pelo atual
+        list[randomNumber] = list[i];
+        // troca o atual pelo aleatório
+        list[i] = tmp;
+    }
+    
+    
+    
+          if(list[0] == 1){
+            bt1 = "blue"
+          }
+    
+          if(list[0] == 2){
+            bt1 = "orange"
+          }
+    
+          if(list[0] == 3){
+            bt1 = "green"
+          }
+    
+          if(list[0] == 4){
+            bt1 = "red"
+          }
+    
+    
+    
+          if(list[1] == 1){
+            bt2 = "blue"
+          }
+    
+          if(list[1] == 2){
+            bt2 = "orange"
+          }
+    
+          if(list[1] == 3){
+            bt2 = "green"
+          }
+    
+          if(list[1] == 4){
+            bt2 = "red"
+          }
+    
+    
+    
+          if(list[2] == 1){
+            bt3 = "blue"
+          }
+    
+          if(list[2] == 2){
+            bt3 = "orange"
+          }
+    
+          if(list[2] == 3){
+            bt3 = "green"
+          }
+    
+          if(list[2] == 4){
+            bt3 = "red"
+          }
+    
+    
+    
+    
+          if(list[3] == 1){
+            bt4 = "blue"
+          }
+    
+          if(list[3] == 2){
+            bt4 = "orange"
+          }
+    
+          if(list[3] == 3){
+            bt4 = "green"
+          }
+    
+          if(list[3] == 4){
+            bt4 = "red"
+          }
+    
+    
+    
+       $("#bt1").css("backgroundColor", bt1);
+       $("#bt2").css("backgroundColor", bt2);
+       $("#bt3").css("backgroundColor", bt3);
+       $("#bt4").css("backgroundColor", bt4);
+    
+      })  
+         
+    
+      
+    
+        if (click < 9) {
+    
+    //Tipo 1
+       if(tipo == "um"){
+         var canvas = document.getElementById("meuRetangulo");
+         var ctx = canvas.getContext("2d")
+    
+    
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        click++;
+      
+      ctx.beginPath();
+      ctx.font="30px Helvetica ";
+      ctx.fillStyle = pnc1cor[click];
+      ctx.fillText(pnc1nome[click],105,80);
+    }
+    
+    //Tipo 2
+    
+    if(tipo == "dois"){
+         var canvas = document.getElementById("meuRetangulo");
+         var ctx = canvas.getContext("2d")
+    
+    
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        click++;
+      
+      ctx.beginPath();
+      ctx.font="30px Helvetica ";
+      ctx.fillStyle = pnc1cor[click];
+      ctx.fillText(pnc1cores[click],105,80);
+    }
+    
+    }else{
+    
+     
+    
+        horafinal = new Date().toLocaleTimeString()
+    
+        horafinal2 = horafinal.substr(6)
+    
+        horainicial2 = horainicial.substr(6)
+    
+        
+        
+    
+        tempogasto = parseInt(horafinal2) - parseInt(horainicial2);
+    
+        
+        
+         localStorage.setItem('acertos', acertos);
+    
+         if(localStorage.getItem('tempogasto') != ""){
+           localStorage.setItem('tempogasto', 0)
+         }
+         
+        if(localStorage.getItem('tipo') == "dois"){
+
+           localStorage.setItem('tempopcc', tempogasto)
+           localStorage.setItem('erropcc', erros)
+           localStorage.setItem('acertopcc', acertos)
+
+           localStorage.setItem('tempogasto', parseInt(localStorage.getItem('tempopnc')) + parseInt(localStorage.getItem('tempopcc')));
+         localStorage.setItem('erros', parseInt(localStorage.getItem('erropnc')) + parseInt(localStorage.getItem('erropcc')));
+         localStorage.setItem('acertos', parseInt(localStorage.getItem('acertopnc')) + parseInt(localStorage.getItem('acertopcc')));
+         localStorage.setItem('inicio', horainicial);
+         localStorage.setItem('fim', horafinal);
+         localStorage.setItem('taxa', (acertos*100)/9);
+
+        }
+
+        if(localStorage.getItem('tipo') == "um"){
+
+          localStorage.setItem('tempopnc', tempogasto)
+          localStorage.setItem('erropnc', erros)
+          localStorage.setItem('acertopnc', acertos)
+
+        }
+                   
+    
+
+        if(Math.sign(parseInt(localStorage.getItem('tempogasto'))) == -1){
+           
+            
+
+          localStorage.setItem('tempogasto', parseInt(localStorage.getItem('tempogasto')) * -1 )  
+
+        
+
+        }
+
+        if(Math.sign(parseInt(localStorage.getItem('tempopnc'))) == -1){
+           
+          
+
+         localStorage.setItem('tempopnc', parseInt(localStorage.getItem('tempopnc')) * -1 )  
+
+       
+
+       }
+
+
+       if(Math.sign(parseInt(localStorage.getItem('tempopcc'))) == -1){
+           
+           
+
+         localStorage.setItem('tempopcc', parseInt(localStorage.getItem('tempo')) * -1 )  
+
+        
+
+       }
+        
+    
+        
+         
+         if(localStorage.getItem('tipo') == "um"){
+        setInterval(function () {window.location.href = "descanso.html" }, 500); 
+      }else{
+          setInterval(function () {window.location.href = "final.html" }, 500);
+        }
+        
+    
+    
+    }
+    
+    }else{
+        erros++
+      }
+    
+      
+    }
+    
+     </script>
+    
+    
+        
+    <div id="bt1" style="
+    
+    
+    
+    margin-top:15%;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100px;
+    height: 100px;
+    background-color: #0B12AB;
+    
+    border-radius: 100px;
+    
+    " onclick="clique(bt1)" onclick="cronometro()"></div>
+    
+    <div id="bt2" style="
+    
+    display: inline-block;
+    
+    margin-top: 22%;
+    
+    margin-right: auto; 
+    width: 100px;
+    height: 100px;
+    margin-top: 5%;
+    margin-left: 8%;
+    background-color: #D11005;
+    
+    border-radius: 100px;
+    
+    " onclick="clique(bt2)" onclick="cronometro()"></div>
+    
+    
+    <div id="bt3" style="
+    
+    display: table;
+    margin-top: 22%;
+    align-content: flex-end;
+    right: 20%;
+    margin-right: 8%;
+    margin-top: 5%;
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: #FF5400;
+    
+    border-radius: 100px;
+    
+    
+    
+    " onclick="clique(bt3)" onclick="cronometro()"></div>
+    
+    
+    <div class="flex-container" id="bt4" style="
+    
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100px;
+    height: 100px;
+    background-color: #0EA61D;
+    
+    border-radius: 100px;
+    
+    margin-bottom: 15%;
+    
+    
+    " onclick="clique(bt4)" onclick="cronometro()"></div>
+    
+    
+</body>
+</html>

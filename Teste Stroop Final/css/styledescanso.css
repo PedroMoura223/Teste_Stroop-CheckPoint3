@@ -1,0 +1,91 @@
+@font-face {
+  src:  url(fonts/static/Montserrat-SemiBold.ttf);
+  font-family: 'Montserrat SB';
+  font-weight: normal;
+}
+
+a {
+
+color: white;
+
+}
+
+a:hover {
+
+color: white;
+  
+}
+
+body {
+
+background-color: #E0E0E0;
+
+}
+
+header {
+
+  background-color: #757575;
+  height: 86px;
+
+}
+
+#logotipo{
+
+  margin-top: 1.8%;
+  margin-left: 3%;
+  width: 20%; 
+
+}      
+
+.titulo {
+
+  width: 114px;
+  height: 23px;
+  margin-top: -13%; 
+  margin-left: 35%; 
+  color: white; 
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+#home{
+  
+width: 8%;
+align-items: center;
+margin-top: 2%;
+margin-left: 11%;
+text-align: center;
+
+}
+
+.relogio {
+
+  margin-top: -60%;
+  margin-bottom: -30%;
+  margin-left: 4%;
+  width: 100%;
+
+}
+
+#tempodeintervalo{
+
+  margin-top: 9%;
+  font-family: 'Montserrat SB';
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+
+}
+
+#informacoes{
+
+  margin-top: -2%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+}

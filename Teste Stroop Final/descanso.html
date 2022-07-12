@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="icon" type="image/icon" href="imagens/Logo_Stroop.ico">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Descanso</title>
+	<link rel="stylesheet" type="text/css" href="css/styledescanso.css">
+</head>
+
+<body>
+
+<header>
+
+<!--LogoMarca a Esquerda -->
+   <img src="imagens/Logo_Stroop.svg" id="logotipo">
+
+<!--Título Centralizado -->
+     <h1 class="titulo" style=" font-family: 'Montserrat Bold', sans-serif;">Intervalo</h1>
+
+<!--Ícone Home a Direita -->
+    <a href="home.html"><img src="imagens/home.png" style="margin-top: -19%; margin-left: 87%; " id="home"></a>
+
+</header>
+
+
+<h4 id="tempodeintervalo">Tempo de intervalo</h4>
+
+<h4 id="informacoes"> 15 segundos</h4> 
+
+<h5 style="font-size: 15px;" id="tempodeintervalo">Próximo Tipo: NCC</h5>
+
+    <div style="margin-top: 40%; margin-bottom: 40%;">
+		
+		<form name="form_main">
+			<div>
+        
+        <img src="imagens/relogio.svg" class="relogio">
+
+        <p id="second" style="font-family: 'Montserrat Bold', sans-serif; font-weight: 400; font-size: 400%; line-height: 23px; text-align: center; margin-top: -41%; margin-left: 3%;"></p>
+    
+	</div>
+  
+</form>
+
+	<script>
+"use strict";
+
+let hour = 0;
+let minute = 0;
+let second = 15;
+let millisecond = 0;
+
+let cron;
+
+
+
+setTimeout(start(),2000)
+
+function start() {
+  pause();
+  cron = setInterval(() => { timer(); }, 10);
+}
+
+function pause() {
+  clearInterval(cron);
+  
+}
+
+function reset() {
+  hour = 0;
+  minute = 0;
+  second = 15;
+  millisecond = 0;
+
+  document.getElementById('second').innerText = '';
+ 
+}
+
+function timer() {
+ 
+  if(second > 0){
+
+  if ((millisecond += 10) == 1000) {
+    millisecond = 0;
+    second--;
+  }
+  if (second == 60) {
+    second = 0;
+    minute--;
+  }
+  if (minute == 60) {
+    minute = 0;
+    hour--;
+  }
+
+}
+
+  if(second == 0){
+	localStorage.setItem('tipo',"dois")
+	setInterval(function () {window.location.href = "teladeaplicacao.html" }, 100); 
+  }
+
+  if(second==10){
+	document.getElementById('second').innerText = '10';
+  }else{
+ 
+  document.getElementById('second').innerText = returnData(second.toString().substr(0, 2));
+}
+}
+
+function returnData(input) {
+  return input > 10 ? input : `0${input}`
+}
+	</script>
+
+ 
+</body>
+</html>

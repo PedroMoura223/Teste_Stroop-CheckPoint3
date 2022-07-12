@@ -133,12 +133,12 @@ $('#menus').hide()
 
 <!-- Caixa Principal -->
 
-<fieldset>
+<fieldset style="text-align: left; align-items: center;">
 
-  <h4 id="ac"  class="vars relatorio"  style="display: inline-block; margin-left: 7%;">Acertos totais -------------------- </h4>  
+  <h4 id="ac"  class="vars relatorio"  style="display: inline-block; margin-left: 7%;">Acertos totais --------------------- </h4>  
   <h4 id="acertos" class="vars relatorio" class="bar" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">-</h4>
 
-   <h4 id="er"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Erros totais ------------------------ </h4> 
+   <h4 id="er"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Erros totais ------------------------- </h4> 
     <h4 id="erros" class="vars relatorio" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">-</h4>
 
    <h4 id="apcc"  class="vars relatorio"  style="display: inline-block; margin-left: 7%;">Acertos NCC ----------------------- </h4> 
@@ -147,25 +147,25 @@ $('#menus').hide()
    <h4 id="epcc"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Erros NCC -------------------------- </h4>  
    <h4 id="erropcc" class="vars relatorio" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">-</h4>
 
-   <h4 id="apnc"  class="vars relatorio"  style="display: inline-block; margin-left: 7%;">Acertos PNC ---------------------- </h4> 
+   <h4 id="apnc"  class="vars relatorio"  style="display: inline-block; margin-left: 7%;">Acertos PNC ----------------------- </h4> 
     <h4 id="acertopnc" class="vars relatorio" class="bar" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">-</h4>
 
-   <h4 id="epnc"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Erros PNC ------------------------- </h4> 
-    <h4 id="erropnc" class="vars relatorio" style=" display: inline-block; text-align: right; margin-left: 2%; margin-right: 2%;">-</h4>
+   <h4 id="epnc"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Erros PNC -------------------------- </h4> 
+    <h4 id="erropnc" class="vars relatorio" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">-</h4>
 
-   <h4 id="tg"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Tempo gasto ------------------- </h4>  
+   <h4 id="tg"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Tempo gasto --------------------- </h4>  
    <h4 id="tempo" class="vars relatorio" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">-</h4>
 
    <h4 id="tpcc"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Tempo NCC ---------------------- </h4>
      <h4 id="tempopcc" class="vars relatorio" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">-</h4>
 
-   <h4 id="tpnc"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Tempo PNC -------------------- </h4> 
+   <h4 id="tpnc"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Tempo PNC ----------------------- </h4> 
     <h4 id="tempopnc" class="vars relatorio" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">-</h4>
 
-   <h4 id="lri"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">LRI ---------------------------- </h4>
+   <h4 id="lri"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">LRI -------------------------------- </h4>
      <h4 id="Lri" class="vars relatorio" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">0.7ms</h4>
 
-   <h4 id="ta"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Taxa de acertos --------------- </h4>  
+   <h4 id="ta"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Taxa de acertos ---------------- </h4>  
     <h4 id="taxa" class="vars relatorio" style=" display: inline-block; text-align: right; margin-left: 1%; margin-right: 2%;">76%</h4>
 
    <h4 id="i"  class="vars relatorio" style="display: inline-block; margin-left: 7%;">Início ------------------------ </h4> 
@@ -229,18 +229,18 @@ $('#menus').hide()
   
     window.print();
 
-    $('.vars').css('margin-top', '2%')
+    $('.vars').css('margin-top', '5%')
     $('.vars').css('color', 'white')
 
-    $('#ac').html('Acertos totais -------------------- ')
+    $('#ac').html('Acertos totais --------------------- ')
 
-   $('#er').html('Erros totais ------------------------ ')
+   $('#er').html('Erros totais ------------------------- ')
 
-   $('#tg').html('Tempo gasto ------------------- ')
+   $('#tg').html('Tempo gasto --------------------- ')
 
-   $('#lri').html('LRI ---------------------------- ')
+   $('#lri').html('LRI -------------------------------- ')
 
-   $('#ta').html('Taxa de acertos --------------- ')
+   $('#ta').html('Taxa de acertos ---------------- ')
 
    $('#i').html('Início ------------------------ ')
 
@@ -250,13 +250,13 @@ $('#menus').hide()
 
    $('#epcc').html('Erros NCC -------------------------- ')
 
-   $('#apnc').html('Acertos PNC ---------------------- ')
+   $('#apnc').html('Acertos PNC ----------------------- ')
 
-   $('#epnc').html('Erros PNC ------------------------- ')
+   $('#epnc').html('Erros PNC -------------------------- ')
 
    $('#tpcc').html('Tempo NCC ---------------------- ')
 
-   $('#tpnc').html('Tempo PNC -------------------- ')
+   $('#tpnc').html('Tempo PNC ----------------------- ')
 
     $('#titulo').html('')
 

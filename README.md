@@ -25,6 +25,7 @@ Mapeamento de Funcionalidades:
 | RF011/Ver tela final | O aluno/professor precisa vizualizar uma tela de conclusão após finalizar o teste.| final.html (Linhas 40 a 58) |
 | RF012/Gerar o relatório com as variáveis do teste (tempos, acertos e erros) | Após a conclusão do teste, o aluno/professor precisar ver, resumidamente, seu desempenho. | relatório.html (Linhas 37 a 63)
 | RF013/Ver erros e acertos totais | Neste ponto o usuário pode analisar a quantidade de erros e acertos gerais obtidos pelo mesmo na execução do teste | relatorio.html (Linhas 135 a 136) |
+ RF012/Gerar o relatório com as variáveis do teste (tempos, acertos e erros) | Após a conclusão do teste, o aluno/professor precisar ver, resumidamente, seu desempenho. | teladeaplicacao.html (Linhas 290 a 315)
 | RF014/Ver erros e acertos por tipo | Neste ponto o usuário pode analisar e erros e acertos de uma maneira mais específica, desta vez por tipo de folha | relatorio.html (Linhas 137 a 140) |
 | RF015/Ver tempo total gasto | Neste ponto o usuário observa todo o tempo gasto para a realização de teste | relatorio.html (Linhas 141) |
 | RF016/Ver tempo gasto por tipo | Neste ponto o usuário observa o tempo gasto com cada tipo de folha | (Linhas 142 e 143) |

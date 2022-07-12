@@ -167,13 +167,6 @@ margin-top: 5%;
 
 }
 
-input.size {
- background-color: white;
- border-radius: 50%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
 .size{
 width: 30px;
 height: 35px;  
